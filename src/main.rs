@@ -43,6 +43,6 @@ fn main() {
         stdout().write(local.to_string().as_bytes()).unwrap();
         stdout().queue(cursor::RestorePosition).unwrap();
         stdout().flush().unwrap();
-        thread::sleep(time::Duration::from_millis(500));
+        thread::sleep(time::Duration::from_secs(1));
     }
 }
